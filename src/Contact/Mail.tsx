@@ -3,7 +3,11 @@ import Button from "@mui/material/Button";
 
 export default function ContactUs() {
   return (
-    <form className="grid gap-3">
+    <form
+      action="https://formspree.io/f/xgebbwbr"
+      method="POST"
+      className="grid gap-3"
+    >
       <Typography
         variant="body1"
         color="inherit"
@@ -12,8 +16,18 @@ export default function ContactUs() {
       >
         Mail Me
       </Typography>
-      <TextField label="From" name="From" variant="filled" className="bg-white rounded-sm" />
-      <TextField label="Number" name="Number" variant="filled" className="bg-white rounded-sm" />
+      <TextField
+        label="From"
+        name="From"
+        variant="filled"
+        className="bg-white rounded-sm"
+      />
+      <TextField
+        label="Number"
+        name="Number"
+        variant="filled"
+        className="bg-white rounded-sm"
+      />
       <TextareaAutosize
         name="message"
         minRows={8}
