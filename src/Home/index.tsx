@@ -1,12 +1,11 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import Typewriter from "typewriter-effect";
 import "../App.css";
+import { NavLink } from "react-router-dom";
 
 export default function Home() {
   return (
-    <Box
-      sx={{ width: "100%", height: { xs: "110vh", sm: "93vh" } }}
-    >
+    <Box sx={{ width: "100%", height: { xs: "110vh", sm: "93vh" } }}>
       <Grid container className="h-full">
         <Grid
           item
@@ -95,9 +94,8 @@ export default function Home() {
                   paddingX: 2,
                   ":hover": { backgroundColor: "#fff", color: "#4f46e5" },
                 }}
-                href="/resume"
               >
-                Resume
+                <NavLink to="/resume">Resume</NavLink>
               </Button>
             </Typography>
           </Box>
