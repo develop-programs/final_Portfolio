@@ -84,19 +84,19 @@ export default function Footer() {
             }}
           >
             <div className="border-2 border-black rounded-2xl p-[2px] flex justify-center items-center hover:border-indigo-500 hover:text-indigo-500">
-              <NavLink to="https://github.com/develop-programs">
+              <a href="https://github.com/develop-programs">
                 <GitHubIcon />
-              </NavLink>
+              </a>
             </div>
             <div className="border-2 border-black rounded-2xl p-[2px] flex justify-center items-center hover:border-indigo-500 hover:text-indigo-500">
-              <NavLink to="https://instagram.com/the.gamer.rock?igshid=MzNlNGNkZWQ4Mg==">
+              <a href="https://instagram.com/the.gamer.rock?igshid=MzNlNGNkZWQ4Mg==">
                 <InstagramIcon />
-              </NavLink>
+              </a>
             </div>
             <div className="border-2 border-black rounded-2xl p-[2px] flex justify-center items-center hover:border-indigo-500 hover:text-indigo-500">
-              <NavLink to="https://www.linkedin.com/in/shreyansh-awadhiya-7107a0240">
+              <a href="https://www.linkedin.com/in/shreyansh-awadhiya-7107a0240">
                 <LinkedInIcon />
-              </NavLink>
+              </a>
             </div>
           </Box>
         </Grid>

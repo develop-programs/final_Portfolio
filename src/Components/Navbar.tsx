@@ -104,18 +104,24 @@ export default function Navbar() {
         <Box sx={{ flexGrow: 1, width: "100%", height: "15rem" }}>
           <List>
             <ListItem>
-              <ListItemButton href="/resume" sx={{textAlign:'center'}}>
-                <ListItemText primary="Resume" />
+              <ListItemButton sx={{ textAlign: "center" }}>
+                <NavLink to="/resume">
+                  <ListItemText primary="Resume" />
+                </NavLink>
               </ListItemButton>
             </ListItem>
             <ListItem>
-              <ListItemButton href="/project" sx={{textAlign:'center'}}>
-                <ListItemText primary="projects" />
+              <ListItemButton sx={{ textAlign: "center" }}>
+                <NavLink to="/project">
+                  <ListItemText primary="projects" />
+                </NavLink>
               </ListItemButton>
             </ListItem>
             <ListItem>
-              <ListItemButton href="/Contact" sx={{textAlign:'center'}}>
-                <ListItemText primary="Contact" />
+              <ListItemButton sx={{ textAlign: "center" }}>
+                <NavLink to="/contact">
+                  <ListItemText primary="Contact" />
+                </NavLink>
               </ListItemButton>
             </ListItem>
           </List>
