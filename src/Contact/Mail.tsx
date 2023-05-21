@@ -1,14 +1,24 @@
-import { Box, TextareaAutosize, TextField } from "@mui/material";
+import { Box, TextareaAutosize, TextField, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 
 export default function ContactUs() {
   return (
     <form className="grid gap-3">
-      <TextField label="From" name="From" variant="filled" />
+      <Typography
+        variant="body1"
+        color="inherit"
+        component="div"
+        sx={{ fontSize: 30, fontWeight: "bold" }}
+      >
+        Mail Me
+      </Typography>
+      <TextField label="From" name="From" variant="filled" className="bg-white rounded-sm" />
+      <TextField label="Number" name="Number" variant="filled" className="bg-white rounded-sm" />
       <TextareaAutosize
         name="message"
         minRows={8}
-        className="border-2 border-gray-300 rounded-md px-1"
+        className="border-2 border-gray-300 rounded-sm p-1"
+        placeholder="Message"
       />
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Button
