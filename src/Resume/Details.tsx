@@ -30,7 +30,7 @@ export default function TableData() {
     return (
         <Paper sx={{ overflowX: 'auto' }}>
             <Table>
-                <TableHead sx={{ backgroundColor: '#000' }}>
+                <TableHead className="bg-black">
                     {
                         Header.map((data: any, idk: any) => (
                             <TableRow key={idk}>

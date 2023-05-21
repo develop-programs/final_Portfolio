@@ -116,47 +116,47 @@ export default function resume() {
               >
                 Tech :{" "}
                 <img
-                  src="../../public/html5.png"
+                  src="/html5.png"
                   alt="Image not Availble"
                   className="w-10"
                 />
                 <img
-                  src="../../public/css-3.png"
+                  src="/css-3.png"
                   alt="Image not Availble"
                   className="w-10"
                 />
                 <img
-                  src="../../public/react.png"
+                  src="/react.png"
                   alt="Image not Availble"
                   className="w-10"
                 />
                 <img
-                  src="../../public/java.png"
+                  src="/java.png"
                   alt="Image not Availble"
                   className="w-10"
                 />
                 <img
-                  src="../../public/nextjs.png"
+                  src="/nextjs.png"
                   alt="Image not Availble"
                   className="w-10"
                 />
                 <img
-                  src="../../public/js.png"
+                  src="/js.png"
                   alt="Image not Availble"
                   className="w-10"
                 />
                 <img
-                  src="../../public/C++.png"
+                  src="/C++.png"
                   alt="Image not Availble"
                   className="w-10"
                 />
                 <img
-                  src="../../public/c.png"
+                  src="/c.png"
                   alt="Image not Availble"
                   className="w-10"
                 />
                 <img
-                  src="../../public/aws.jpeg"
+                  src="/aws.jpeg"
                   alt="Image not Availble"
                   className="w-10"
                 />
