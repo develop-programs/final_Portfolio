@@ -26,7 +26,7 @@ export default function Home() {
           >
             <div className="circle w-96 h-96 bg-indigo-400 border-2 border-black">
               <img
-                src="public/20190407_130822-removebg-preview.png"
+                src="../../public/20190407_130822-removebg-preview.png"
                 alt="Image not Found"
                 className="object-cover h-full w-full"
               />
