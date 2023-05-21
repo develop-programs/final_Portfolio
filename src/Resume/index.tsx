@@ -64,7 +64,7 @@ export default function resume() {
         sx={{
           flexGrow: 1,
           width: "100%",
-          height: "95vh",
+          height: {xs: "100vh",sm: "95vh"},
           paddingX: { xs: "none", sm: 2, md: 10 },
         }}
       >
