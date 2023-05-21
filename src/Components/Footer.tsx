@@ -25,7 +25,7 @@ export default function Footer() {
             component="div"
             sx={{ fontSize: 25, fontWeight: "bold" }}
           >
-            I Will Appriciate If You Contact Me
+            I Will <br /> Appriciate If You Contact Me
           </Typography>
         </Grid>
         <Grid
