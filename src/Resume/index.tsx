@@ -64,7 +64,7 @@ export default function resume() {
         sx={{
           flexGrow: 1,
           width: "100%",
-          height: "93vh",
+          height: "95vh",
           paddingX: { xs: "none", sm: 2, md: 10 },
         }}
       >
@@ -87,7 +87,7 @@ export default function resume() {
             <Typography>Experience</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Experience/>
+            <Experience />
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -102,8 +102,12 @@ export default function resume() {
               sx={{
                 flexGrow: 1,
                 textAlign: "center",
-                display: "grid",
+                display: "flex",
+                flexWrap: "wrap",
                 justifyContent: "center",
+                overflow: "hidden",
+                overflowX: "auto",
+                paddingY: 2,
               }}
             >
               <Typography
@@ -112,55 +116,22 @@ export default function resume() {
                 component="div"
                 display="flex"
                 fontSize={25}
-                gap={2}
               >
                 Tech :{" "}
-                <img
-                  src="/html5.png"
-                  alt="Image not Availble"
-                  className="w-10"
-                />
-                <img
-                  src="/css-3.png"
-                  alt="Image not Availble"
-                  className="w-10"
-                />
-                <img
-                  src="/react.png"
-                  alt="Image not Availble"
-                  className="w-10"
-                />
-                <img
-                  src="/java.png"
-                  alt="Image not Availble"
-                  className="w-10"
-                />
-                <img
-                  src="/nextjs.png"
-                  alt="Image not Availble"
-                  className="w-10"
-                />
-                <img
-                  src="/js.png"
-                  alt="Image not Availble"
-                  className="w-10"
-                />
-                <img
-                  src="/C++.png"
-                  alt="Image not Availble"
-                  className="w-10"
-                />
-                <img
-                  src="/c.png"
-                  alt="Image not Availble"
-                  className="w-10"
-                />
-                <img
-                  src="/aws.jpeg"
-                  alt="Image not Availble"
-                  className="w-10"
-                />
               </Typography>
+              <img src="/html5.png" alt="Image not Availble" className="w-10" />
+              <img src="/css-3.png" alt="Image not Availble" className="w-10" />
+              <img src="/react.png" alt="Image not Availble" className="w-10" />
+              <img src="/java.png" alt="Image not Availble" className="w-10" />
+              <img
+                src="/nextjs.png"
+                alt="Image not Availble"
+                className="w-10"
+              />
+              <img src="/js.png" alt="Image not Availble" className="w-10" />
+              <img src="/C++.png" alt="Image not Availble" className="w-10" />
+              <img src="/c.png" alt="Image not Availble" className="w-10" />
+              <img src="/aws.jpeg" alt="Image not Availble" className="w-10" />
             </Box>
             <Box
               sx={{

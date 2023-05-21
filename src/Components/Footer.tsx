@@ -23,7 +23,12 @@ export default function Footer() {
             variant="body1"
             color="inherit"
             component="div"
-            sx={{ fontSize: 25, fontWeight: "bold" }}
+            sx={{
+              fontSize: 25,
+              fontWeight: "bold",
+              textAlign: { xs: "center", sm: "none" },
+              paddingY: { xs: "10px", sm: "none" },
+            }}
           >
             I Will <br /> Appriciate If You Contact Me
           </Typography>
@@ -36,6 +41,7 @@ export default function Footer() {
             display: "grid",
             alignItems: "center",
             justifyContent: "center",
+            paddingY: { xs: "10px", sm: "none" },
           }}
         >
           <NavLink to="/" className="font-bold hover:text-indigo-600">
@@ -78,13 +84,19 @@ export default function Footer() {
             }}
           >
             <div className="border-2 border-black rounded-2xl p-[2px] flex justify-center items-center hover:border-indigo-500 hover:text-indigo-500">
-              <GitHubIcon />
+              <a href="https://github.com/develop-programs">
+                <GitHubIcon />
+              </a>
             </div>
             <div className="border-2 border-black rounded-2xl p-[2px] flex justify-center items-center hover:border-indigo-500 hover:text-indigo-500">
-              <InstagramIcon />
+              <a href="https://instagram.com/the.gamer.rock?igshid=MzNlNGNkZWQ4Mg==">
+                <InstagramIcon />
+              </a>
             </div>
             <div className="border-2 border-black rounded-2xl p-[2px] flex justify-center items-center hover:border-indigo-500 hover:text-indigo-500">
-              <LinkedInIcon />
+              <a href="https://www.linkedin.com/in/shreyansh-awadhiya-7107a0240">
+                <LinkedInIcon />
+              </a>
             </div>
           </Box>
         </Grid>

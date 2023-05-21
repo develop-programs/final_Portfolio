@@ -5,6 +5,10 @@ import {
   Button,
   Drawer,
   IconButton,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
   Toolbar,
   Typography,
 } from "@mui/material";
@@ -97,7 +101,25 @@ export default function Navbar() {
           setOpen((open) => !open);
         }}
       >
-        <Box sx={{ flexGrow: 1, width: "100%", height: "20rem" }}></Box>
+        <Box sx={{ flexGrow: 1, width: "100%", height: "15rem" }}>
+          <List>
+            <ListItem>
+              <ListItemButton href="/resume" sx={{textAlign:'center'}}>
+                <ListItemText primary="Resume" />
+              </ListItemButton>
+            </ListItem>
+            <ListItem>
+              <ListItemButton href="/project" sx={{textAlign:'center'}}>
+                <ListItemText primary="projects" />
+              </ListItemButton>
+            </ListItem>
+            <ListItem>
+              <ListItemButton href="/Contact" sx={{textAlign:'center'}}>
+                <ListItemText primary="Contact" />
+              </ListItemButton>
+            </ListItem>
+          </List>
+        </Box>
       </Drawer>
     </>
   );
