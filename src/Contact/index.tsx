@@ -21,7 +21,7 @@ export default function Contact() {
           width: { xs: "100%", sm: "50%", lg: "35%" },
           height: "60vh",
           padding: { xs: "none", sm: 2, md: 8 },
-          paddingX: { xs: "2px", sm: "none" },
+          paddingX: { xs: "4px", sm: "none" },
           borderRadius: "5px",
           boxShadow: "-2px -4px 37px -2px rgba(0,0,0,0.75)",
         }}

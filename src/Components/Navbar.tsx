@@ -104,22 +104,33 @@ export default function Navbar() {
           <List>
             <ListItem>
               <ListItemButton sx={{ textAlign: "center" }}>
-                <NavLink to="/resume" className="text-xl font-semibold w-full text-center">
-              Resume
+                <NavLink
+                  to="/resume"
+                  className="text-xl font-semibold w-full text-center"
+                >
+                  <ArticleIcon />
+                  Resume
                 </NavLink>
               </ListItemButton>
             </ListItem>
             <ListItem>
               <ListItemButton sx={{ textAlign: "center" }}>
-                <NavLink to="/project" className="text-xl font-semibold w-full text-center">
-                  Projects
+                <NavLink
+                  to="/project"
+                  className="text-xl font-semibold w-full text-center hover:text-indigo-400"
+                >
+                  <AssignmentIcon /> Projects
                 </NavLink>
               </ListItemButton>
             </ListItem>
             <ListItem>
               <ListItemButton sx={{ textAlign: "center" }}>
-                <NavLink to="/contact" className="text-xl font-semibold w-full text-center">
-                Contact
+                <NavLink
+                  to="/contact"
+                  className="text-xl font-semibold w-full text-center hover:text-indigo-400"
+                >
+                  <ContactPageIcon />
+                  Contact
                 </NavLink>
               </ListItemButton>
             </ListItem>

@@ -65,7 +65,7 @@ export default function resume() {
           flexGrow: 1,
           width: "100%",
           height: "95vh",
-          paddingX: { xs: "none", sm: 2, md: 10 },
+          paddingX: { xs: 1, sm: 2, md: 10 },
         }}
       >
         <Accordion
