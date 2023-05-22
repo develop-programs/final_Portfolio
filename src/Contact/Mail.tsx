@@ -1,13 +1,19 @@
+import { useForm } from "@formspree/react";
 import { Box, TextareaAutosize, TextField, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 
 export default function ContactUs() {
+  const [state, handleSubmit] = useForm("xgebbwbr");
+  if (state.succeeded) {
+    return (
+      <div className="text-2xl">
+        <p className="font-semibold">Mail Sent</p>
+        <p>Reload Page to sent next mail </p>
+      </div>
+    );
+  }
   return (
-    <form
-      action="https://formspree.io/f/xgebbwbr"
-      method="POST"
-      className="grid gap-3"
-    >
+    <form onSubmit={handleSubmit} className="grid gap-3">
       <Typography
         variant="body1"
         color="inherit"
@@ -45,6 +51,7 @@ export default function ContactUs() {
             paddingX: 2,
             ":hover": { backgroundColor: "#fff", color: "#4f46e5" },
           }}
+          disabled={state.submitting}
         >
           Submit
         </Button>

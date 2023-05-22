@@ -1,3 +1,4 @@
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import Resume from "./Resume";
@@ -5,20 +6,55 @@ import Project from "./Projects";
 import Contact from "./Contact";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import ReactLoading from "react-loading";
+import { Box, Typography } from "@mui/material";
 
 function App() {
+  const [loading, setLoading] = React.useState(true);
+  React.useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 10000);
+  }, []);
   return (
-    <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/project" element={<Project />} />
-        <Route path="/Contact" element={<Contact />} />
-      </Routes>
-      <Footer />
-    </>
+    <div>
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/project" element={<Project />} />
+            <Route path="/Contact" element={<Contact />} />
+          </Routes>
+          <Footer />
+        </>
+      )}
+    </div>
   );
 }
 
+function Loader() {
+  return (
+    <Box
+      sx={{
+        flexGrow: 1,
+        width: "100%",
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+      }}
+    >
+      <ReactLoading color={"#000"} height={"10%"} width={"10%"} />
+      <Typography variant="body1" color="inherit" component="div" fontSize={20} fontWeight={550} marginTop={5}>
+        Wait A Sec
+      </Typography>
+    </Box>
+  );
+}
 export default App;
