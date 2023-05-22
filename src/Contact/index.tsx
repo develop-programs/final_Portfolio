@@ -21,6 +21,7 @@ export default function Contact() {
           width: { xs: "100%", sm: "50%", lg: "35%" },
           height: "60vh",
           padding: { xs: "none", sm: 2, md: 8 },
+          paddingX: { xs: "2px", sm: "none" },
           borderRadius: "5px",
           boxShadow: "-2px -4px 37px -2px rgba(0,0,0,0.75)",
         }}
@@ -34,6 +35,7 @@ export default function Contact() {
           padding: { xs: "none", sm: 2, md: 8 },
           backgroundColor: "#4f46e5",
           borderRadius: "5px",
+          paddingX: { xs: "2px", sm: "none" },
           marginLeft: { xs: "none", sm: "-10px", md: "-20px" },
           marginTop: { xs: "-40px", sm: "0px" },
           boxShadow: { xs: "none", sm: "-2px -4px 37px -4px rgba(0,0,0,0.75)" },

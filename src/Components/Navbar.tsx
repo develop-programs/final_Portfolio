@@ -8,7 +8,6 @@ import {
   List,
   ListItem,
   ListItemButton,
-  ListItemText,
   Toolbar,
   Typography,
 } from "@mui/material";
@@ -105,22 +104,22 @@ export default function Navbar() {
           <List>
             <ListItem>
               <ListItemButton sx={{ textAlign: "center" }}>
-                <NavLink to="/resume">
-                  <ListItemText primary="Resume" />
+                <NavLink to="/resume" className="text-xl font-semibold w-full text-center">
+              Resume
                 </NavLink>
               </ListItemButton>
             </ListItem>
             <ListItem>
               <ListItemButton sx={{ textAlign: "center" }}>
-                <NavLink to="/project">
-                  <ListItemText primary="projects" />
+                <NavLink to="/project" className="text-xl font-semibold w-full text-center">
+                  Projects
                 </NavLink>
               </ListItemButton>
             </ListItem>
             <ListItem>
               <ListItemButton sx={{ textAlign: "center" }}>
-                <NavLink to="/contact">
-                  <ListItemText primary="Contact" />
+                <NavLink to="/contact" className="text-xl font-semibold w-full text-center">
+                Contact
                 </NavLink>
               </ListItemButton>
             </ListItem>

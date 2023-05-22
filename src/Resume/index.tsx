@@ -9,7 +9,7 @@ import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import TableData from "./Details";
 import Chart from "./Chart";
-import { Box } from "@mui/material";
+import { Box, Tooltip } from "@mui/material";
 import Download from "./Download";
 import Experience from "./Experience";
 
@@ -64,7 +64,7 @@ export default function resume() {
         sx={{
           flexGrow: 1,
           width: "100%",
-          height: {xs: "100vh",sm: "95vh"},
+          height: "95vh",
           paddingX: { xs: "none", sm: 2, md: 10 },
         }}
       >
@@ -108,6 +108,7 @@ export default function resume() {
                 overflow: "hidden",
                 overflowX: "auto",
                 paddingY: 2,
+                gap: 2,
               }}
             >
               <Typography
@@ -119,23 +120,64 @@ export default function resume() {
               >
                 Tech :{" "}
               </Typography>
-              <img src="/html5.png" alt="Image not Availble" className="w-10" />
-              <img src="/css-3.png" alt="Image not Availble" className="w-10" />
-              <img src="/react.png" alt="Image not Availble" className="w-10" />
-              <img src="/java.png" alt="Image not Availble" className="w-10" />
-              <img
-                src="/nextjs.png"
-                alt="Image not Availble"
-                className="w-10"
-              />
-              <img src="/js.png" alt="Image not Availble" className="w-10" />
-              <img src="/C++.png" alt="Image not Availble" className="w-10" />
-              <img src="/c.png" alt="Image not Availble" className="w-10" />
-              <img src="/aws.jpeg" alt="Image not Availble" className="w-10" />
+              <Tooltip title="C Language">
+                <img src="/c.png" alt="Image not Availble" className="w-10" />
+              </Tooltip>
+              <Tooltip title="C++">
+                <img src="/C++.png" alt="Image not Availble" className="w-10" />
+              </Tooltip>
+              <Tooltip title="Java">
+                <img
+                  src="/java.png"
+                  alt="Image not Availble"
+                  className="w-10"
+                />
+              </Tooltip>
+              <Tooltip title="Html">
+                <img
+                  src="/html5.png"
+                  alt="Image not Availble"
+                  className="w-10"
+                />
+              </Tooltip>
+              <Tooltip title="CSS">
+                <img
+                  src="/css-3.png"
+                  alt="Image not Availble"
+                  className="w-10"
+                />
+              </Tooltip>
+              <Tooltip title="JavaScript">
+                <img src="/js.png" alt="Image not Availble" className="w-10" />
+              </Tooltip>
+              <Tooltip title="ReactJs">
+                <img
+                  src="/react.png"
+                  alt="Image not Availble"
+                  className="w-10"
+                />
+              </Tooltip>
+              <Tooltip title="NextJs">
+                <img
+                  src="/nextjs.png"
+                  alt="Image not Availble"
+                  className="w-10"
+                />
+              </Tooltip>
+              <Tooltip title="TypeScript">
+                <img src="/ts.png" alt="Image not Availble" className="w-10" />
+              </Tooltip>
+              <Tooltip title="Amazon Web service">
+                <img
+                  src="/aws.jpeg"
+                  alt="Image not Availble"
+                  className="w-10"
+                />
+              </Tooltip>
             </Box>
             <Box
               sx={{
-                height: "38rem",
+                height: "38vh",
                 display: "grid",
                 justifyContent: "center",
               }}
