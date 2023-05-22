@@ -20,13 +20,13 @@ export default function Footer() {
           }}
         >
           <Typography
-            variant="body1"
+            variant="h6"
             color="inherit"
             component="div"
             sx={{
               fontSize: 25,
-              fontWeight: "bold",
-              textAlign: { xs: "center", sm: "none" },
+              fontWeight: 700,
+              textAlign: { xs: "center", sm: "left" },
               paddingY: { xs: "10px", sm: "none" },
             }}
           >

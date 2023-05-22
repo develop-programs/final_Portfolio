@@ -28,10 +28,10 @@ export default function Home() {
             <Typography
               variant="body1"
               color="initial"
-              className="circle bg-indigo-400"
+              className="circle bg-indigo-600"
               sx={{
                 width: { xs: "100%", sm: "90%" },
-                height: { xs: "45vh", sm: "100%", objectFit: "cover" },
+                height: { xs: "45vh", sm: "90%", objectFit: "cover" },
               }}
             >
               <img
@@ -92,7 +92,12 @@ export default function Home() {
                   border: "2px solid #4f46e5",
                   fontWeight: 550,
                   paddingX: 2,
-                  ":hover": { backgroundColor: "#fff", color: "#4f46e5" },
+                  ":hover": {
+                    backgroundColor: "#fff",
+                    color: "#4f46e5",
+                    boxShadow:
+                      "-28px 28px 19px #8370b6,28px -28px 19px #d5b6ff",
+                  },
                 }}
               >
                 <NavLink to="/resume">Resume</NavLink>

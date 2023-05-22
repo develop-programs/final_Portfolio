@@ -35,6 +35,7 @@ export default function Contact() {
           padding: { xs: "none", sm: 2, md: 8 },
           backgroundColor: "#4f46e5",
           borderRadius: "5px",
+          zIndex: 10,
           paddingX: { xs: "2px", sm: "none" },
           marginLeft: { xs: "none", sm: "-10px", md: "-20px" },
           marginTop: { xs: "-40px", sm: "0px" },
