@@ -8,6 +8,7 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import ReactLoading from "react-loading";
 import { Box, Typography } from "@mui/material";
+import Typewriter from "typewriter-effect";
 
 function App() {
   const [loading, setLoading] = React.useState(true);
@@ -51,8 +52,21 @@ function Loader() {
       }}
     >
       <ReactLoading color={"#000"} height={"10%"} width={"10%"} />
-      <Typography variant="body1" color="inherit" component="div" fontSize={20} fontWeight={550} marginTop={5}>
-        Wait A Sec
+      <Typography
+        variant="body1"
+        color="inherit"
+        component="div"
+        fontSize={20}
+        fontWeight={550}
+        marginTop={5}
+      >
+        <Typewriter
+          options={{
+            strings: ["Wait for a moment", "Let the Page Load"],
+            autoStart: true,
+            loop: true,
+          }}
+        />
       </Typography>
     </Box>
   );
