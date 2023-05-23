@@ -51,7 +51,7 @@ function Loader() {
         flexDirection: "column",
       }}
     >
-      <ReactLoading color={"#000"} height={"10%"} width={"10%"} />
+      <ReactLoading color={"#000"} height={"10%"} width={"8%"} />
       <Typography
         variant="body1"
         color="inherit"

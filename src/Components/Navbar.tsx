@@ -51,7 +51,7 @@ export default function Navbar() {
                 color="inherit"
                 sx={{
                   marginRight: 2,
-                  ":hover": { backgroundColor: "#4f46e5", color: "#fff" },
+                  ":hover": { backgroundColor: "#6366f1", color: "#fff" },
                 }}
               >
                 <NavLink
@@ -65,7 +65,7 @@ export default function Navbar() {
                 color="inherit"
                 sx={{
                   marginRight: 2,
-                  ":hover": { backgroundColor: "#4f46e5", color: "#fff" },
+                  ":hover": { backgroundColor: "#6366f1", color: "#fff" },
                 }}
               >
                 <NavLink
@@ -79,7 +79,7 @@ export default function Navbar() {
                 color="inherit"
                 sx={{
                   marginRight: 2,
-                  ":hover": { backgroundColor: "#4f46e5", color: "#fff" },
+                  ":hover": { backgroundColor: "#6366f1", color: "#fff" },
                 }}
               >
                 <NavLink

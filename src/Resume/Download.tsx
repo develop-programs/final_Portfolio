@@ -23,7 +23,7 @@ export default function Download() {
           onClick={FileDownload}
           sx={{
             ":hover": {
-              fontWeight: 600
+              fontWeight: 600,
             },
           }}
         >
