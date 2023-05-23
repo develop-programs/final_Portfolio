@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import ContactUs from "./Mail";
 import Info from "./Info";
+import "../App.css";
 
 export default function Contact() {
   return (
@@ -20,6 +21,8 @@ export default function Contact() {
         sx={{
           width: { xs: "100%", sm: "50%", lg: "35%" },
           height: "60vh",
+          background: "transparent",
+          backgroundColor:"#fff",
           padding: { xs: "none", sm: 2, md: 8 },
           paddingX: { xs: "4px", sm: "none" },
           borderRadius: "5px",

@@ -18,7 +18,15 @@ export default function Download() {
   return (
     <Box sx={{ flexGrow: 1, height: "3rem", textAlign: "end", marginRight: 5 }}>
       <Typography variant="body1" color="inherit">
-        <Button color="inherit" onClick={FileDownload}>
+        <Button
+          color="inherit"
+          onClick={FileDownload}
+          sx={{
+            ":hover": {
+              fontWeight: 600
+            },
+          }}
+        >
           <FileDownloadIcon /> Download
         </Button>
       </Typography>

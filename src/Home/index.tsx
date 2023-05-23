@@ -30,7 +30,7 @@ export default function Home() {
             display: { xs: "none", sm: "flex" },
           }}
         >
-          <div className="circle1 w-[50vh] h-[40vh] -mt-20 -mr-28 bg-blue-500"></div>
+          <div className="circle1 w-[50vh] h-[40vh] -mt-20 -mr-28"></div>
         </Box>
         <Box
           sx={{
@@ -39,7 +39,7 @@ export default function Home() {
             display: { xs: "none", sm: "flex" },
           }}
         >
-          <div className="circle2 w-[50vh] h-[40vh] mt-[30vh] -ms-32 bg-blue-500"></div>
+          <div className="circle2 w-[50vh] h-[40vh] mt-[30vh] -ms-32"></div>
         </Box>
       </Box>
       <Grid container className="h-full">

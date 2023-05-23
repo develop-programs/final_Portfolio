@@ -49,7 +49,11 @@ export default function ContactUs() {
             border: "2px solid #4f46e5",
             color: "#fff",
             paddingX: 2,
-            ":hover": { backgroundColor: "#fff", color: "#4f46e5" },
+            ":hover": {
+              backgroundColor: "#fff",
+              color: "#4f46e5",
+              boxShadow: "-12px 12px 12px #8370b6,12px -12px 12px #d5b6ff",
+            },
           }}
           disabled={state.submitting}
         >
