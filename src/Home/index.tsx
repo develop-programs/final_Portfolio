@@ -133,7 +133,7 @@ export default function Home() {
                     backgroundColor: "#fff",
                     color: "#4f46e5",
                     boxShadow:
-                      "-28px 28px 19px #8370b6,28px -28px 19px #d5b6ff",
+                      "-16px 16px 19px #8370b6,16px -16px 19px #d5b6ff",
                   },
                 }}
               >
