@@ -62,6 +62,7 @@ export default function resume() {
       <Download />
       <Box
         sx={{
+          position: "relative",
           flexGrow: 1,
           width: "100%",
           height: "95vh",

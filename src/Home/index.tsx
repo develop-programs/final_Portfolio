@@ -5,7 +5,43 @@ import { NavLink } from "react-router-dom";
 
 export default function Home() {
   return (
-    <Box sx={{ width: "100%", height: { xs: "110vh", sm: "93vh" } }}>
+    <Box
+      sx={{
+        position: "relative",
+        width: "100%",
+        height: { xs: "110vh", sm: "93vh" },
+        overflow: "hidden",
+      }}
+    >
+      <Box
+        sx={{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          zIndex: -10,
+          display: { xs: "none", sm: "grid" },
+        }}
+      >
+        <Box
+          sx={{
+            width: "100%",
+            height: "inherit/2",
+            justifyContent: "end",
+            display: { xs: "none", sm: "flex" },
+          }}
+        >
+          <div className="circle1 w-[50vh] h-[40vh] -mt-20 -mr-28 bg-blue-500"></div>
+        </Box>
+        <Box
+          sx={{
+            width: "100%",
+            height: "inherit/2",
+            display: { xs: "none", sm: "flex" },
+          }}
+        >
+          <div className="circle2 w-[50vh] h-[40vh] mt-[30vh] -ms-32 bg-blue-500"></div>
+        </Box>
+      </Box>
       <Grid container className="h-full">
         <Grid
           item
@@ -32,6 +68,7 @@ export default function Home() {
               sx={{
                 width: { xs: "100%", sm: "90%" },
                 height: { xs: "45vh", sm: "90%", objectFit: "cover" },
+                marginLeft: { xs: "none", sm: "4rem" },
               }}
             >
               <img
