@@ -106,7 +106,7 @@ export default function Navbar() {
               <ListItemButton sx={{ textAlign: "center" }}>
                 <NavLink
                   to="/resume"
-                  className="text-xl font-semibold w-full text-center"
+                  className="text-md font-semibold w-full text-center"
                 >
                   <ArticleIcon />
                   Resume
@@ -117,7 +117,7 @@ export default function Navbar() {
               <ListItemButton sx={{ textAlign: "center" }}>
                 <NavLink
                   to="/project"
-                  className="text-xl font-semibold w-full text-center hover:text-indigo-400"
+                  className="text-md font-semibold w-full text-center hover:text-indigo-400"
                 >
                   <AssignmentIcon /> Projects
                 </NavLink>
@@ -127,7 +127,7 @@ export default function Navbar() {
               <ListItemButton sx={{ textAlign: "center" }}>
                 <NavLink
                   to="/contact"
-                  className="text-xl font-semibold w-full text-center hover:text-indigo-400"
+                  className="text-md font-semibold w-full text-center hover:text-indigo-400"
                 >
                   <ContactPageIcon />
                   Contact

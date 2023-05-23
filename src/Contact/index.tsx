@@ -24,7 +24,7 @@ export default function Contact() {
           marginLeft: { xs: "none", md: 30, lg: 50 },
         }}
       >
-        <div className="Circle-resume bg-indigo-400 min-[320px]:w-full min-[320px]:h-full min-[1024px]:w-[50%]"></div>
+        <div className="Circle-resume bg-indigo-300 min-[320px]:w-full min-[320px]:h-full min-[1024px]:w-[50%]"></div>
       </Box>
       <Box
         sx={{
@@ -43,7 +43,7 @@ export default function Contact() {
         <Box
           sx={{
             width: { xs: "100%", sm: "80vw", md: "45vw", lg: "35vw" },
-            height: { xs: "100%", sm: "60vh" },
+            height: { xs: "100%", sm: "60vh", md: "60%" },
             padding: { xs: 2, sm: 5 },
             borderRight: "none",
             boxShadow: " -17px -1px 19px 10px rgba(117,117,117,1)",
@@ -54,7 +54,7 @@ export default function Contact() {
         <Box
           sx={{
             width: { xs: "100%", sm: "80vw", md: "35vw", lg: "25vw" },
-            height: { xs: "100%", sm: "60vh" },
+            height: { xs: "100%", sm: "60vh", md: "60%" },
             padding: { xs: 2, sm: 5 },
             borderLeft: "none",
             boxShadow: "17px -1px 19px 10px rgba(117,117,117,1)",

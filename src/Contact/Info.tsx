@@ -28,7 +28,8 @@ export default function Info() {
           variant="body1"
           color="inherit"
           component="div"
-          fontSize={20}
+          fontSize={16}
+          fontWeight={600}
         >
           <LocationOnIcon fontSize="medium" />
           Address: <br /> Shanti Vihar Colony Daganiya Raipur (C.G.)
@@ -37,7 +38,8 @@ export default function Info() {
           variant="body1"
           color="inherit"
           component="div"
-          fontSize={20}
+          fontSize={16}
+          fontWeight={600}
         >
           <PhoneIcon fontSize="medium" /> Phone: 9294512259
         </Typography>
@@ -45,7 +47,8 @@ export default function Info() {
           variant="body1"
           color="inherit"
           component="div"
-          fontSize={20}
+          fontSize={16}
+          fontWeight={600}
         >
           <AlternateEmailIcon fontSize="medium" /> Email:
           shreyanshawadhiya@gmail.com

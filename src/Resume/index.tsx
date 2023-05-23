@@ -81,7 +81,7 @@ export default function resume() {
             marginLeft: { xs: "none",md: 50 },
           }}
         >
-          <div className="Circle-resume bg-indigo-400 min-[320px]:w-full min-[320px]:h-full min-[1024px]:w-[50%]"></div>
+          <div className="Circle-resume bg-indigo-300 min-[320px]:w-full min-[320px]:h-full min-[1024px]:w-[50%]"></div>
         </Box>
         <Box>
           <Accordion

@@ -52,7 +52,7 @@ export default function ContactUs() {
             ":hover": {
               backgroundColor: "#fff",
               color: "#4f46e5",
-              boxShadow: "-12px 12px 6px #8370b6,12px -12px 6px #d5b6ff",
+              boxShadow: "-12px 12px 8px #8370b6,12px -12px 8px #d5b6ff",
             },
           }}
           disabled={state.submitting}
