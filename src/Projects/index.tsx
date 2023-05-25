@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import "./project.css";
 
 export default function Project() {
@@ -26,7 +26,11 @@ export default function Project() {
       >
         <div className="Circle-project bg-indigo-300 min-[320px]:w-full min-[320px]:h-full min-[1024px]:w-[50%]"></div>
       </Box>
-      N/A
+      <Box>
+        <Typography variant="h4" color="inherit">
+          N/A
+        </Typography>
+      </Box>
     </Box>
   );
 }
