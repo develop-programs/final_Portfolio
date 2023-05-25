@@ -2,6 +2,9 @@ import { Box, Button, Grid, Typography } from "@mui/material";
 import Typewriter from "typewriter-effect";
 import "../App.css";
 import { NavLink } from "react-router-dom";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export default function Home() {
   return (
@@ -114,13 +117,23 @@ export default function Home() {
               component="div"
               sx={{ marginRight: { xs: "none", lg: 40 } }}
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Doloribus dolorum illum nesciunt iste, vero perspiciatis?
-              Asperiores facilis ratione nam dolor, hic doloremque. Repellat
-              quod sit, vel pariatur recusandae labore fugit ea officiis dolorum
-              nisi. Corporis aliquid fugiat aperiam soluta praesentium?
+              I am Shreyansh Awadhiya from Raipur Chhattisgarh. I wish to be a
+              Full Stack Developer but currently working as a freelance past 6
+              months .I hope to create best websites that no one can make and to
+              be best at my field. I would like to increase my Knowlege while
+              working with you. Hope you reach out to me soon
             </Typography>
-            <Typography variant="body1" color="inherit" component="div">
+            <Typography
+              variant="body1"
+              color="inherit"
+              component="div"
+              sx={{
+                display: {
+                  xs: "grid",
+                  sm: "flex",
+                },
+              }}
+            >
               <Button
                 color="inherit"
                 sx={{
@@ -139,6 +152,37 @@ export default function Home() {
               >
                 <NavLink to="/resume">Resume</NavLink>
               </Button>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  paddingLeft: {
+                    xs: 0,
+                    sm: 10,
+                  },
+                  gap: 2,
+                }}
+              >
+                <a
+                  href="https://github.com/develop-programs"
+                  className="hover:text-indigo-500"
+                >
+                  <GitHubIcon fontSize="large" />
+                </a>
+                <a
+                  href="https://instagram.com/the.gamer.rock?igshid=MzNlNGNkZWQ4Mg=="
+                  className="hover:text-indigo-500"
+                >
+                  <InstagramIcon fontSize="large" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/shreyansh-awadhiya-7107a0240"
+                  className="hover:text-indigo-500"
+                >
+                  <LinkedInIcon fontSize="large" />
+                </a>
+              </Box>
             </Typography>
           </Box>
         </Grid>

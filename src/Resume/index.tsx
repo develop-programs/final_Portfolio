@@ -14,6 +14,7 @@ import Download from "./Download";
 import Experience from "./Experience";
 import "./resume.css";
 
+// eslint-disable-next-line react-refresh/only-export-components
 const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
@@ -26,6 +27,7 @@ const Accordion = styled((props: AccordionProps) => (
   },
 }));
 
+// eslint-disable-next-line react-refresh/only-export-components
 const AccordionSummary = styled((props: AccordionSummaryProps) => (
   <MuiAccordionSummary
     expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: "0.9rem" }} />}
@@ -45,12 +47,14 @@ const AccordionSummary = styled((props: AccordionSummaryProps) => (
   },
 }));
 
+// eslint-disable-next-line react-refresh/only-export-components
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   padding: theme.spacing(2),
   borderTop: "1px solid rgba(0, 0, 0, .125)",
 }));
 
 export default function resume() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [expanded, setExpanded] = React.useState<string | false>("panel1");
 
   const handleChange =
@@ -78,7 +82,7 @@ export default function resume() {
             height: "100%",
             zIndex: -10,
             display: "grid",
-            marginLeft: { xs: "none",md: 50 },
+            marginLeft: { xs: "none", md: 50 },
           }}
         >
           <div className="Circle-resume bg-indigo-300 min-[320px]:w-full min-[320px]:h-full min-[1024px]:w-[50%]"></div>
@@ -88,7 +92,7 @@ export default function resume() {
             expanded={expanded === "panel1"}
             onChange={handleChange("panel1")}
             sx={{
-              background:'transparent',
+              background: "transparent",
             }}
           >
             <AccordionSummary
@@ -105,7 +109,7 @@ export default function resume() {
             expanded={expanded === "panel2"}
             onChange={handleChange("panel2")}
             sx={{
-              background:'transparent'
+              background: "transparent",
             }}
           >
             <AccordionSummary
@@ -122,7 +126,8 @@ export default function resume() {
             expanded={expanded === "panel3"}
             onChange={handleChange("panel3")}
             sx={{
-              background:'transparent'
+              background: "transparent",
+              fontWeight: 600,
             }}
           >
             <AccordionSummary
